@@ -16,4 +16,4 @@ jobs:
     - name: make
       run: g++ main.cpp -o main
     - name: run
-      run: ./main
+      run: ./main < test_case.txt
