@@ -8,10 +8,6 @@ class IntCell {
     storedValue = new int(initialValue);
   }
 
-  ~IntCell() {
-    delete storedValue;
-  }
-
   int read() const {
     return *storedValue;
   }
@@ -25,9 +21,11 @@ class IntCell {
 };
 
 int f() {
-    IntCell a(2);
+    int i, j;
+    cin >> i >> j;
+    IntCell a(i);
     IntCell b = a;
-    IntCell c;
+    IntCell c(j);
 
     c = b;
     a.write(4);
