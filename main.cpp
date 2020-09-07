@@ -1,4 +1,5 @@
-#include <iostream.h>
+#include <iostream>
+using namespace std;
 
 // Each IntCell should behave independently
 class IntCell {
